@@ -21,14 +21,10 @@ def main():
     a = int(operacion.split()[0])
     b = int(operacion.split()[1])
     c = operacion.split()[2]
-    if c == "+":
-        print(suma(a,b))
-    elif c == "-":
-        print(resta(a,b))
-    elif c == "*":
-        print(multiplicacion(a,b))
-    elif c == "/":
-        print(division(a,b))
+    operaciones = {"+": suma, "-": resta, "*": multiplicacion, "/": division}  # Conjunto de operaciones válidas
+    for key in operaciones:
+        resultado: int = operaciones[c](a, b)
+    print(resultado)
 
 if __name__ == "__main__":
     main()
