@@ -4,6 +4,10 @@ Escribir una función que reciba una lista de números y devuelva solo aquellos
 que son primos. La función debe recibir una lista de enteros y retornar solo
 aquellos que sean primos.
 """
+#verifica si un número es primo, si es menor o igual a 1 no es primo
+#si es mayor a 1 verifica si es divisible por algún número entre 2 y
+# la raíz cuadrada de n
+
 import math
 
 def primo(n: int) -> bool:
