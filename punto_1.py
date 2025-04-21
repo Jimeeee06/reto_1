@@ -4,7 +4,7 @@ Crear una función que realice operaciones básicas (suma, resta, multiplicació
 división) entre dos números,según la elección del usuario, la forma de entrada
 de la función será los dos operandos y el caracter usado para la operación.
 """
-
+#Se crea una función para cada operaci+on y luego se opera de acuerdo al input
 def suma(a: int, b: int) -> int:
     return a + b
 def resta(a: int, b: int) -> int:
