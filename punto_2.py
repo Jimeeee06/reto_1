@@ -5,6 +5,9 @@ Condición: No se vale hacer slicing para invertir la palabra y verificar que
 sea igual a la original.
 """
 
+#se comparan los caracteres desde los extremos hacia el centro, si no es igual
+# se retorna False, si todos son iguales se retorna True
+
 def palindromo(word: str) -> bool:
     length = len(word)
     #Compara los caracteres desde los extremos
